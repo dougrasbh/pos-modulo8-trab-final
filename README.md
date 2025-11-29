@@ -13,9 +13,9 @@ Este projeto foi desenvolvido como Trabalho Prático da disciplina **Machine Lea
 
 ## 📊 Descrição do Problema
 
-O objetivo do projeto é prever se um paciente possui risco de doença cardíaca utilizando atributos clínicos fornecidos no dataset *Heart Disease UCI*.
+O objetivo do projeto é prever se um paciente possui doença cardíaca utilizando atributos clínicos fornecidos no dataset *Heart Disease*.
 
-A variável alvo é **`target`**, onde:  
+A variável alvo é **`HeartDiasese`**, onde:  
 - `0` → Ausência de doença cardíaca  
 - `1` → Presença de doença cardíaca  
 
@@ -40,13 +40,13 @@ O dataset inclui variáveis como:
 Para garantir melhor qualidade e desempenho dos algoritmos, realizamos:
 
 ### ✔️ Tratamento de Outliers
-Valores discrepantes em variáveis numéricas foram substituídos pela **mediana** da coluna correspondente.
+Valores zerados em variáveis numéricas foram substituídos pela **mediana** da coluna correspondente.
 
 ### ✔️ Balanceamento de Classes (SMOTE)
-Como o dataset apresenta desbalanceamento entre as classes, aplicamos **SMOTE** (Synthetic Minority Over-sampling Technique) para aumentar sinteticamente exemplos da classe minoritária, tornando o treinamento dos classificadores mais robusto.
+Como o dataset apresenta desbalanceamento entre as classes, aplicamos **SMOTE** (Synthetic Minority Over-sampling Technique) para aumentar sinteticamente exemplos da classe minoritária.
 
 ### ✔️ Normalização / Padronização
-Escalonamento aplicado para melhorar o desempenho de modelos sensíveis à escala (KNN e SVC).
+A normalização foi aplicada para que todas as variáveis numéricas fiquem na mesma escala, evitando que atributos com valores muito altos dominem a distância entre amostras. Isso é especialmente importante para modelos baseados em distância ou margem, como KNN e SVC, que são diretamente influenciados pela magnitude dos atributos.
 
 ### ✔️ Redução de Dimensionalidade (PCA) — Experimentos com e sem PCA
 Realizamos experimentos comparativos **com e sem PCA**:
