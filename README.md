@@ -13,9 +13,10 @@ Este projeto foi desenvolvido como Trabalho Prático da disciplina **Machine Lea
 
 ## 📊 Descrição do Problema
 
-O objetivo do projeto é prever se um paciente possui doença cardíaca utilizando atributos clínicos fornecidos no dataset *Heart Disease*.
+O objetivo do projeto é prever se um paciente possui doença cardíaca utilizando atributos clínicos fornecidos no dataset *Heart Failure Disease*, disponível em:  
+🔗 https://www.kaggle.com/datasets/tan5577/heart-failure-dataset
 
-A variável alvo é **`HeartDiasese`**, onde:  
+A variável alvo é **`HeartDisease`**, onde:  
 - `0` → Ausência de doença cardíaca  
 - `1` → Presença de doença cardíaca  
 
